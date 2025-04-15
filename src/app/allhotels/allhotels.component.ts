@@ -13,7 +13,7 @@ import { Observable } from 'rxjs';
   styleUrl: './allhotels.component.css'
 })
 export class AllhotelsComponent {
-  Recipes: any[] = [];
+  Hotels: any[] = [];
   param: any;
   searchTerm: string = '';
 
@@ -21,22 +21,22 @@ export class AllhotelsComponent {
 
   ngOnInit(): void {
     this._dataService.getAllHotels().subscribe((data) => {
-      this.Recipes = data.recipes;
-      console.log(this.Recipes);
+      this.Hotels = data.recipes;
+      console.log(this.Hotels);
     });
   }
 
-  filteredRecipes(): any[] {
-    if (!this.Recipes || !Array.isArray(this.Recipes)) {
+  filteredHotels(): any[] {
+    if (!this.Hotels || !Array.isArray(this.Hotels)) {
       return [];
     }
     
     if (!this.searchTerm) {
-      return this.Recipes;
+      return this.Hotels;
     }
 
-    return this.Recipes.filter(recipe =>
-      recipe.name.toLowerCase().includes(this.searchTerm.toLowerCase())
+    return this.Hotels.filter(hotel =>
+      hotel.name.toLowerCase().includes(this.searchTerm.toLowerCase())
     );
   }
 }

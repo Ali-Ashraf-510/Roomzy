@@ -138,7 +138,7 @@
   
   /* Enhanced Button styling */
   .product-btn {
-    background: linear-gradient(135deg, #ff7a18, #e52e71);
+    background: linear-gradient(135deg, #4ef372, #5e76ff);
     color: #ffffff;
     font-size: 1.1rem;
     padding: 10px 20px;
@@ -154,7 +154,7 @@
   .product-btn:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(229, 46, 113, 0.4);
-    background: linear-gradient(135deg, #ff7a18, #ff3d6e);
+    background: linear-gradient(135deg, #4ef372, #5e76ff);
   }
   
   .product-btn:before {

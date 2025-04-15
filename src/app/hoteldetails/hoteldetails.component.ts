@@ -5,13 +5,13 @@ import { ActivatedRoute, Router } from '@angular/router';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-recipe-detail',
+  selector: 'app-hoteldetails',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './recipe-detail.component.html',
-  styleUrl: './recipe-detail.component.css'
+  templateUrl: './hoteldetails.component.html',
+  styleUrl: './hoteldetails.component.css'
 })
-export class RecipeDetailComponent implements OnInit {
+export class HoteldetailsComponent implements OnInit {
   recipe: any=[]; 
 
   constructor(private route: ActivatedRoute, private _dataService: DataService,private router:Router) {}
@@ -42,13 +42,4 @@ export class RecipeDetailComponent implements OnInit {
      
     
     }
-  saveRecipe(product:any) {
-    const savedRecipes = JSON.parse(localStorage.getItem('savedRecipes') || '[]');
-    savedRecipes.push(this.recipe); 
-    localStorage.setItem('savedRecipes', JSON.stringify(savedRecipes)); 
-    this.router.navigate(['/saved-recipes']);
-    this._dataService.addToSaved(product)
-
-  }  
-  
 }
