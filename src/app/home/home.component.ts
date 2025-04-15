@@ -18,7 +18,7 @@ export class HomeComponent  {
 
   ngOnInit(): void {
     // جلب الوصفات عند تهيئة الكومبوننت
-    this._DataService.getAllRecipes().subscribe((data) => {
+    this._DataService.getAllHotels().subscribe((data) => {
       this.Recipes = data.recipes;
     });
   }

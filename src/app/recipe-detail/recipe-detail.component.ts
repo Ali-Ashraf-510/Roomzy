@@ -18,7 +18,7 @@ export class RecipeDetailComponent implements OnInit {
 
   ngOnInit(): void {
     const recipeId = + this.route.snapshot.params['id']; // Get recipe ID from URL
-    this._dataService.getRecipeById(recipeId).subscribe((data) => {
+    this._dataService.getHotelById(recipeId).subscribe((data) => {
       this.recipe = data; 
       console.log(this.recipe); 
     });

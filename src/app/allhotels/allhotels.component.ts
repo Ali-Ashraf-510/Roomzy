@@ -6,13 +6,13 @@ import { FormsModule } from '@angular/forms';
 import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-allrecipes',
+  selector: 'app-allhotels',
   standalone: true,
   imports: [CommonModule, RouterLink, FormsModule],
-  templateUrl: './allrecipes.component.html',
-  styleUrls: ['./allrecipes.component.css']
+  templateUrl: './allhotels.component.html',
+  styleUrl: './allhotels.component.css'
 })
-export class AllrecipesComponent {
+export class AllhotelsComponent {
   Recipes: any[] = [];
   param: any;
   searchTerm: string = '';
@@ -20,7 +20,7 @@ export class AllrecipesComponent {
   constructor(public _dataService: DataService, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this._dataService.getAllRecipes().subscribe((data) => {
+    this._dataService.getAllHotels().subscribe((data) => {
       this.Recipes = data.recipes;
       console.log(this.Recipes);
     });

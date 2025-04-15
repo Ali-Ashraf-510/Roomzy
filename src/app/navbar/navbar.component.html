@@ -21,8 +21,8 @@
 
                 <!-- Recipes Link -->
                 <li class="nav-item" *ngIf="logined">
-                    <a class="nav-link" routerLink="allrecipes" routerLinkActive="active">
-                        <i class="fas fa-utensils"></i> All Hotels
+                    <a class="nav-link" routerLink="allhotels" routerLinkActive="active">
+                        <i class="fa-solid fa-hotel"></i>All Hotels
                     </a>
                 </li>
 
@@ -38,12 +38,7 @@
                         <i class="fas fa-phone"></i> Contact Us</a>
                 </li>
 
-                <!-- Saved Recipes Link -->
-                <li class="nav-item" *ngIf="logined">
-                    <a class="nav-link" routerLink="saved-recipes" routerLinkActive="active">
-                        <i class="fa-solid fa-heart"></i> Saved Recipes {{mySavedCount}}
-                    </a>
-                </li>
+         
 
                 <!-- Sign Up Link -->
                 <li class="nav-item" *ngIf="!logined">

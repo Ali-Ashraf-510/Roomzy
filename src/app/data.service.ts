@@ -45,11 +45,11 @@ removeToSaved(item:any){
 
 
 
-  getAllRecipes(): Observable<any> {
+  getAllHotels(): Observable<any> {
     return this._HttpClient.get('https://dummyjson.com/recipes');
   }
   
-  getRecipeById(id: number): Observable<any> {
+  getHotelById(id: number): Observable<any> {
     return this._HttpClient.get(`https://dummyjson.com/recipes/${id}`);
   }
 }
