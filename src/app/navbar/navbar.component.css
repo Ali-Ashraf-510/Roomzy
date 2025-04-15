@@ -1,0 +1,79 @@
+.logo {
+    width: 40px; 
+    height: auto;
+    margin-right: 8px;
+}
+
+*::selection {
+    background: #34d399; /* Emerald green for selection, fresh and vibrant */
+    color: #ffffff; /* White text for contrast */
+}
+
+.navbar {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    background: linear-gradient(45deg, #ffffff, #f8fafc); /* Clean white to soft gray for a sleek look */
+}
+
+.navbar-brand {
+    transition: transform 0.3s ease;
+    font-size: 1.8rem; 
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #34d399; /* Deep blue for trust and professionalism */
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+}
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    color: #34d399; /* Matching deep blue for consistency */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #34d399; /* Emerald green for hover effect, lively accent */
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.nav-link:hover {
+    color: #34d399; /* Green on hover for vibrancy */
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #227456; /* Deep blue for active state */
+}
+
+.navbar-toggler-icon {
+    color: #227456; /* Deep blue for toggler */
+}
+
+/* Box Shadow for Depth */
+.shadow-sm {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Softer shadow for subtlety */
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}

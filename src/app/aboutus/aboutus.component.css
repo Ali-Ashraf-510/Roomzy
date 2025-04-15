@@ -1,0 +1,107 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8fafc; /* Soft gray background for the page */
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #34d399; /* Deep blue for branding */
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    color: #4a5568; /* Gray for readability */
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #34d399; /* Deep blue for headings */
+    margin-bottom: 1.5rem;
+}
+
+.about-content p, .about-content ul {
+    font-size: 1rem;
+    color: #4a5568; /* Gray for body text */
+    line-height: 1.6;
+}
+
+.about-content ul li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.about-content ul li::before {
+    content: '✔';
+    color: #34d399; /* Emerald green for icons */
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.team-section {
+    margin-top: 3rem;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.team-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #34d399; /* Deep blue for names */
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #4a5568; /* Gray for roles */
+}
+
+.btn-discover-more {
+    display: inline-block;
+    background-color: #34d399; /* Deep blue button */
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 2rem;
+}
+
+.btn-discover-more:hover {
+    background-color: #34d399; /* Green on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about-header h1 {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .team-img {
+        width: 120px;
+        height: 120px;
+    }
+}
